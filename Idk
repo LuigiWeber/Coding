@@ -1,1 +1,10 @@
+#new topic!
+#introductions to files, read, write them, and search within them (this is a big part of the second homeworks)
+#this is useful cause we can store information and data we get from our python instructions not in the terminal but in an external file
+#we have different modes to access files, read, write and buffer. 
+#the keyword is "open()", and in the brackets the file we want to access. we may have to specify the encoding, which is the kind of characters, in our case it is utf-8
+#to immediatly access the file we can put it in the same folder our python code is. 
+#to close the file (which we should always do when were done, we just write var.close)
+
+
 
