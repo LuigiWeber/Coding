@@ -8,6 +8,7 @@
 
 #so f = open("hello.txt", w) w indicates that we want to edit the file, (w stands for write), another way is to use the "a", as for append, and that will add at the end of the file your modifications
 with open("hello.txt", "r") as f:
-    header = f.readline()
+    header = f.readline()#the readlines function creates a list in which element is a line, and so a string, still in this case "data" is a LIST
     data = f.readlines()
-print(data)
+print(data[1])#will print just the first line, thanks to the [1] after data. 
+
