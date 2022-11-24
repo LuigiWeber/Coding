@@ -7,5 +7,7 @@
 #to close the file (which we should always do when were done, we just write var.close)
 
 #so f = open("hello.txt", w) w indicates that we want to edit the file, (w stands for write), another way is to use the "a", as for append, and that will add at the end of the file your modifications
-#
-
+with open("hello.txt", "r") as f:
+    header = f.readline()
+    data = f.readlines()
+print(data)

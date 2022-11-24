@@ -1,0 +1,4 @@
+name, last name, student id
+mickey, mouse, 1
+rei, ayanami, 2
+john, smith, 3
