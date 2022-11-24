@@ -7,8 +7,19 @@
 #to close the file (which we should always do when were done, we just write var.close)
 
 #so f = open("hello.txt", w) w indicates that we want to edit the file, (w stands for write), another way is to use the "a", as for append, and that will add at the end of the file your modifications
+'''
 with open("hello.txt", "r") as f:
     header = f.readline()#the readlines function creates a list in which element is a line, and so a string, still in this case "data" is a LIST
     data = f.readlines()
 print(data[1])#will print just the first line, thanks to the [1] after data. 
+'''
+#the .split() function will result in a list that contains the elements of the given string, it will tell them apart by spaces present in the given string
+#however it can be specified the character that "splits" the string, we can choose the "separator". it is used like this: .split(",") for using commas as a separator
+#the .split() function can have just one argument, so just one type of separator. we can solve this by replacing for examples hashes with a comma, with the .replace function
+#or again, we can use the .strip() function to remove some selected characters from a string, allowing us to split correctly, and it even allows us to specify more than one character
+
+
+#instead, to write new files in python, we can use the open function with the w argument. even if w overwrites the whole file, so to add to it, we use the a argument. now we can use the.write function on the opened file.
+
+
 
