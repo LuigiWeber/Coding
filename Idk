@@ -21,5 +21,26 @@ print(data[1])#will print just the first line, thanks to the [1] after data.
 
 #instead, to write new files in python, we can use the open function with the w argument. even if w overwrites the whole file, so to add to it, we use the a argument. now we can use the.write function on the opened file.
 
+# quick and simple exericse: write a python program that reads numbers from a file and stores even numbers in even.txt and odd numbers in odd.txt
+
+# read the file
+with open("numbers.txt", "r") as read_file:
+    numberlist = read_file.read()
+    numberlist = numberlist.split(",")#to split the numbers stored in the text file
+    # now numberlist is a list, in which each element is a number present in the txt file, and we can access each number in a list
+    # however whatever you read from a txt file will be considered as a string character
+    
+    # open the files to be filled
+with open("even.txt", "w") as even_file: #of course in w mode so that we can write on this files, not just read them
+    with open("odd.txt", "w") as odd_file:
+        # check if the number is odd or even, then apend it in the right place
+        for element in numberlist:
+            if int(element) % 2 == 0:
+                even_file.write(element + "/n")
+            else:
+                odd_file.write(element + "/n")
 
 
+
+    print(read_list)
+    
