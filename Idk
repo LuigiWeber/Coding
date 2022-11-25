@@ -24,6 +24,7 @@ print(data[1])#will print just the first line, thanks to the [1] after data.
 # quick and simple exericse: write a python program that reads numbers from a file and stores even numbers in even.txt and odd numbers in odd.txt
 
 # read the file
+'''
 with open("numbers.txt", "r") as read_file:
     numberlist = read_file.read()
     numberlist = numberlist.split(",")#to split the numbers stored in the text file
@@ -42,5 +43,19 @@ with open("even.txt", "w") as even_file: #of course in w mode so that we can wri
 
 
 
-    print(read_list)
-    
+print(read_list)
+'''
+
+# we are going to use dictionaries, it works as a literal dictionary, each element of  dictionary is a pair, as it has a key and the element associated with that key
+
+# eng2ita = {"one":"uno","two":"due","three":"tre"} # in python curly brackets represent dictionaries
+# numbers in english represent the key, the ones in italian the value associated with their own key
+# dictionaries do have functions to modify them, of course. to add a new key together with a new value, use eng2ita["four"] = "quattro"
+# notice that we used square brackets as we use them to access data in general, they are not strictly associated with lists.
+# in dictionaries a key can apear only once. 
+
+
+
+
+
+
