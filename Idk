@@ -54,7 +54,32 @@ print(read_list)
 # notice that we used square brackets as we use them to access data in general, they are not strictly associated with lists.
 # in dictionaries a key can apear only once. 
 
+# program that can handle a class data with a single dictionary
 
+class_dict = {
+    "student1" : {
+        "name":"mickey",
+        "lastname" : "mouse",
+        "grades" : {
+            "physics" : 18,
+            "computer science" : 25
+        }
+    },#we have to use the same keys we used for the first student, of course
+    "student2":{
+        "name":"gianni",
+        "lastname":"cicoria",
+        "grades":{
+            "physics":18,
+            "computer science":18
+        }
+    }
+}
+# this tree branch like structure helps creating ordered data
+
+# tuples and sets
+
+# a tuple is a list that cannot be changed.
+# a set is a list with no order relationship
 
 
 
