@@ -126,6 +126,39 @@ point = Point(2,6)
 # a method is a function inside a class, while a function is a function outside
 
 
+# Inheritance, last topic of the course, its a way of using classes without applicating the data
+
+class Person():
+    def __init__(self,name=None,lastname=None,plusinfo=None):
+        self.name = nome
+        self.lastname = cognome
+        self.plusinfo = dob
+    def Printdata(self):
+        print(f"Name is {self.name}, Last name is {self.lastname}, plusinfo is {self.plusinfo}")
+
+###############
+# Main code
+
+Per = Person("Gigio", "Ole", "Bello")
+
+Per.Printdata()
+
+# Now if we create a new class, lets say Student(), with the same type of data stored inside, so name, lastname, and plusinfo, plus some additional data as grades and course
+# So in the end, the class Student() is a special Person() class, but with some additional data
+# at this point, when we define the Student() class, we can Inherit the data from the Person() class, like this: we will have to redefine the init function, tho since we have new type of data to use
+
+class Student(Person):
+    def __init__(self, name = None, lastname = None, plusinfo = None, studID = None, course = None):
+        # we use the super() function to take data from the Person() class
+        super().___init___(name, lastname, plusinfo)
+        self.studID = studentID
+        self.course = takencourse
+    # if we dont redefine the functions, the Student() class will simply import the functions inside the Person() class
+    # now we can add the additional data the Student() class has more than the Person() one
+    # ecc
+# now if we call the Student() class it wil store all the datas from the Person() class, so name lastname ecc PLUS the ones we defined inside the Student() class
+
+
 
 
 
