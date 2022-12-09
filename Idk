@@ -80,6 +80,53 @@ class_dict = {
 
 # a tuple is a list that cannot be changed.
 # a set is a list with no order relationship
+# L5I25HXU code for course evaluation
+
+
+# creating your own data type, with a thing called CLASSES, which often simplify our job. all the standard data types are actually classes
+# we use dictionaries to interact with classes. 
+# we want to create a class to handle the data about, using the previous examples, stundents, in thisway:
+'''
+class Student():
+    student_id = None
+    name = None
+    lastname = None
+    degree = None
+    grades = {}
+
+this defines our data type
+
+'''
+# Student class usage is now to be done this way:
+'''
+stud1 = Student()
+stud1.(any of the data we stored in a class, so student_id, name, lastname ecc)
+stud1.name = Giorgio
+stud1.lastname = Stramaroni
+
+'''
+# we-ve now modified owr special data type, thanks to class
+# of course the new data type we-ve created can go inside lists and other type of interactions, too.
+
+'''
+Class Example
+
+class Point():
+    def __init__(self,x,y)
+    self.x = x
+    self.y = y
+
+that is the point class definition, the init initializes the class to the type of data it will interact with
+the self is necessary as from the outside, when we call the class, or data type, we need a var to be used as the name of the point which we want the coordinates from
+
+
+point = Point(2,6)
+
+'''
+# a method is a function inside a class, while a function is a function outside
+
+
+
 
 
 
